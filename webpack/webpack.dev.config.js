@@ -1,4 +1,3 @@
-const path = require('path')
 const webpack = require('webpack')
 const merge = require('webpack-merge')
 const SpeedMeasurePlugin = require('speed-measure-webpack-plugin')
@@ -11,8 +10,7 @@ const plugins = [
 ]
 
 const entry = [
-  'react-hot-loader/patch',
-  path.resolve(__dirname, '../src/pages/index.js')
+  'react-hot-loader/patch'
 ]
 
 const smp = new SpeedMeasurePlugin()

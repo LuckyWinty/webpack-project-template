@@ -29,7 +29,6 @@ const plugins = [
     },
   }),
   new FriendlyErrorsWebpackPlugin({
-
   }),
   new MiniCssExtractPlugin({
     filename: 'chunk.[name].[contenthash:8].css',
@@ -54,7 +53,8 @@ const plugins = [
   })
 ]
 const entry = [
-  '@babel/polyfill'
+  '@babel/polyfill',
+  path.resolve(__dirname, '../src/pages/index.js')
 ]
 module.exports = {
   entry,
