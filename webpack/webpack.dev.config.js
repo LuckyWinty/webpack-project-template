@@ -32,6 +32,7 @@ const dev = {
     hot: true,
     port: 8181,
     quiet: true,
+    open: true,
   },
   watchOptions: {
     ignored: /node_modules/,
